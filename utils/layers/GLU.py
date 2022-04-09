@@ -12,3 +12,6 @@ class GLU(Layer):
 
   def call(self, inputs):
     return self.linear(inputs) * self.sigmoid(inputs)
+
+
+# https://keras.io/examples/structured_data/classification_with_grn_and_vsn/
