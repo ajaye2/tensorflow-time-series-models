@@ -1,6 +1,6 @@
 import tensorflow as tf
 from tensorflow.keras.layers import Layer, Dense, concatenate
-from GRU import GRU
+from GRN import GRN
 
 class VariableSelection(Layer):
     def __init__(self, num_features, units, dropout_rate):
