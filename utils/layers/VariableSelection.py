@@ -8,10 +8,10 @@ class VariableSelection(Layer):
         self.grns = list()
         # Create a GRN for each feature independently
         for idx in range(num_features):
-            grn = GRU(units, dropout_rate)
+            grn = GRN(units, dropout_rate)
             self.grns.append(grn)
         # Create a GRN for the concatenation of all the features
-        self.grn_concat = GRU(units, dropout_rate)
+        self.grn_concat = GRN(units, dropout_rate)
         self.softmax = Dense(units=num_features, activation="softmax")
 
     def call(self, inputs):
