@@ -1,5 +1,5 @@
 from tensorflow.keras.layers import Layer, Dense, LayerNormalization, Dropout
-from .GLU import GLU
+from GLU import GLU
 
 ###
 # Gated Residual Network
